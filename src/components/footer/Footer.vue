@@ -1,47 +1,60 @@
 <template>
-  <section class="section is-primary" id="footer">
     <div class="container">
     <hr>
-      <p class="is-5 has-text-centered">
-        <strong>
-          Comparision is the death of
-          <vue-typer :text='["joy","coding","philosophy"]'
-            :repeat='Infinity'
-            :shuffle='false'
-            initial-action='typing'
-            :pre-type-delay='2000'
-            :type-delay='200'
-            :pre-erase-delay='4000'
-            :erase-delay='50'
-            erase-style='backspace'
-            :erase-on-complete='true'
-            caret-animation='blink'
-            ></vue-typer>
-        </strong>
-      </p>
+    {{random}}
+      <d-quote :statement="quote.statement"
+            :placeholder="quote.placeholder" :position="quote.position"></d-quote>
     </div>
-  </section>
 </template>
 
 <script>
-import { VueTyper } from 'vue-typer';
+import DQuote from '../quote/Quote';
 
 export default {
   name: 'Footer',
   components: {
-    VueTyper,
+    DQuote,
+  },
+  data() {
+    return {
+      quote: {},
+      quotes: [
+        {
+          statement: 'Comparision is the death of ',
+          placeholder: 'joy',
+          position: 'end',
+        },
+        {
+          statement: 'The best way to predict your future is to ',
+          placeholder: 'create it',
+          position: 'end',
+        },
+        {
+          statement: ' is the only way to sustain passion',
+          placeholder: ' Habit',
+          position: 'start',
+        },
+        {
+          statement: "Dream is not the thing you see in sleep but the one that doesn't let you ",
+          placeholder: 'sleep',
+          position: 'end',
+        },
+      ],
+    };
+  },
+  computed: {
+    random() {
+      this.update();
+      return '';
+    },
+  },
+  methods: {
+    update() {
+      this.quote = this.quotes[0];
+      setInterval(() => {
+        this.quote = this.quotes[Math.floor(Math.random() * this.quotes.length)];
+      }, 6000);
+    },
   },
 };
 </script>
-
-<style>
-.vue-typer .custom.char {
-  color: #3F51B5;
-  background-color: white;
-}
-.vue-typer .custom.caret {
-  width: 2px;
-  background-color: #3F51B5;
-}
-
-</style>
