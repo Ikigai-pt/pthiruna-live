@@ -1,8 +1,7 @@
 <template>
-<div class="hero-head">
-<div class="columns is-centered">
-  <div class="column is-centered is-one-half">
-    <section class="section">
+<!-- <div class="hero-head"> -->
+<!-- <div class="columns is-centered"> -->
+<!--   <div class="column is-centered is-one-half"> -->
       <div class="container has-text-centered">
         <nav class="tabs is-centered is-large">
             <ul>
@@ -35,10 +34,9 @@
           </nav>
         </h2>
       </div>
-    </section>
-  </div>
-</div>
-</div>
+  <!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
 </template>
 
 <script>
@@ -53,9 +51,6 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .router-link-active a{
-    color: black;
-  }
 </style>
 
 <script>
