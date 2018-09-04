@@ -1,14 +1,8 @@
 <template>
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Flow
-        </h1>
-        <h2 class="subtitle">
-          progressive software development for agile
-        </h2>
+  <main class="container">
+    <div class="subtitle is-size-4">
+      <strong>Code</strong>
       </div>
-    </div>
-  </section>
+      <p>best pratices</p>
+  </main>
 </template>

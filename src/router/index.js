@@ -20,17 +20,17 @@ export default new Router({
       meta: { icon: 'far fa-user' },
     },
     {
-      path: '/code',
-      name: 'Code',
-      component: Code,
-      meta: { icon: 'far fa-file-code' },
-    },
-    {
       path: '/books',
       alias: '/books/#/',
       name: 'Books',
       component: Books,
       meta: { icon: 'far fa-bookmark' },
+    },
+    {
+      path: '/code',
+      name: 'Code',
+      component: Code,
+      meta: { icon: 'far fa-file-code' },
     },
     {
       path: '/lifestyle',

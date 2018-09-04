@@ -1,14 +1,10 @@
 <template>
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Blogs
-        </h1>
-        <h2 class="subtitle">
-          mind map
-        </h2>
+  <main class="container">
+    <div class="subtitle is-size-4">
+      <strong>Blog</strong>
       </div>
-    </div>
-  </section>
+      <p>mind map<br>
+      </p>
+  </main>
 </template>
+

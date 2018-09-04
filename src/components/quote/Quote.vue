@@ -46,11 +46,11 @@ export default {
 
 <style>
 .vue-typer .custom.char {
-  color: #7595a4;
+  color: #193449;
 }
 .vue-typer .custom.caret {
   width: 2px;
-  background-color: #7595a4;
+  background-color: #193449;
 }
 
 </style>
