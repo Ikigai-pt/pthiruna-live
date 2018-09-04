@@ -1,7 +1,7 @@
 <template>
   <article class="media">
   <figure class="media-left">
-    <p class="image is-128x128">
+    <p class="image is-64x64">
       <img :src="image">
     </p>
   </figure>

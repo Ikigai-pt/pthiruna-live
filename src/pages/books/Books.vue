@@ -35,7 +35,7 @@ export default {
         {
           title: 'Implementing DDD',
           author: 'Vaughn Vernon',
-          description: 'For software developers of all experience levels looking to improve their results, and design and implement domain-driven enterprise applications consistently with the best current state of professional practice, Implementing Domain-Driven Design will impart a treasure trove of knowledge hard won within the DDD and enterprise application architecture communities',
+          description: 'Implement domain-driven enterprise applications consistently with the best current state of professional practice, Implementing Domain-Driven Design will impart a treasure trove of knowledge hard won within the DDD and enterprise application architecture communities',
           image: 'https://images-na.ssl-images-amazon.com/images/I/51DAelADFFL._SX365_BO1,204,203,200_.jpg',
           link: 'https://www.amazon.com/gp/product/0321834577/ref=ox_sc_act_title_5?smid=ATVPDKIKX0DER&psc=1',
         },
