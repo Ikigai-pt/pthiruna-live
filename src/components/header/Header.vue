@@ -1,7 +1,5 @@
 <template>
-  <section class="section">
-    <navbar></navbar>
-  </section>
+  <navbar></navbar>
 </template>
 <script>
 import Navbar from '@/components/navbar/NavBar';

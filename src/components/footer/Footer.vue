@@ -21,22 +21,22 @@ export default {
       quotes: [
         {
           statement: 'Comparision is the death of ',
-          placeholder: 'joy',
+          placeholder: 'joy.',
           position: 'end',
         },
         {
           statement: 'The best way to predict your future is to ',
-          placeholder: 'create it',
+          placeholder: 'create it.',
           position: 'end',
         },
         {
-          statement: ' is the only way to sustain passion',
+          statement: ' is the only way to sustain passion.',
           placeholder: ' Habit',
           position: 'start',
         },
         {
           statement: "Dream is not the thing you see in sleep but the one that doesn't let you ",
-          placeholder: 'sleep',
+          placeholder: 'sleep.',
           position: 'end',
         },
       ],

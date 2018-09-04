@@ -1,7 +1,7 @@
 <template>
-  <div id="app" class="container is-fluid">
+  <div id="app" class="section is-fluid">
     <page-header></page-header>
-    <main class="column is-11 is-offset-1">
+    <main class="column is-12 ">
       <router-view/>
     </main>
     <page-footer></page-footer>
