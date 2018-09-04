@@ -6,11 +6,25 @@
             </figure>
     </article>
     <article class="tile is-child notification is-white">
-        <div class="content">
-          <h1 class="title">Tall tile</h1>
-          <p class="is-5">
-            An engineer passionate
-          </p>
+        <div class="content has-text-centered is-5">
+          <i>
+          <br>
+          <br>
+            I believe and follow a profession where <br>
+            work is <strong>fun</strong> <br>
+            responsibility is <strong>empowerment</strong><br>
+            quality is <strong>discipline</strong><br>
+            agile process is a <strong>habit.</strong> <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            I thrive to work at a company where <br>
+            learning <br>
+            problem solving <br>
+            and risk<br>
+            is embraced as part of the <strong>culture.</strong><br>
+        </i>
         </div>
       </article>
   </div>
@@ -28,13 +42,8 @@ export default {
 </script>
 
 <style>
-.vue-typer .custom.char {
-  color: #3F51B5;
-  background-color: white;
-}
-.vue-typer .custom.caret {
-  width: 2px;
-  background-color: #3F51B5;
+.content strong {
+  color: #193449;
 }
 </style>
 

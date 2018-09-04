@@ -1,14 +1,8 @@
 <template>
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Lifestyle
-        </h1>
-        <h2 class="subtitle">
-          health food travel
-        </h2>
+  <main class="container">
+    <div class="subtitle is-size-4">
+      <strong>Lifestyle</strong>
       </div>
-    </div>
-  </section>
+      <p>travel health food</p>
+  </main>
 </template>

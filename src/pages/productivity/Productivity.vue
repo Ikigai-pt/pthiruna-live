@@ -1,14 +1,9 @@
 <template>
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-         Productivity
-        </h1>
-        <h2 class="subtitle">
-          habit formation
-        </h2>
+  <main class="container">
+    <div class="subtitle is-size-4">
+      <strong>Productivity</strong>
       </div>
-    </div>
-  </section>
+      <p>vim graphql typing<br>
+      </p>
+  </main>
 </template>
