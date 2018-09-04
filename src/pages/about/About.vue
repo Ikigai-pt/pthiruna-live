@@ -23,8 +23,8 @@
             <br>
             <br>
             I thrive to work at a company where <br>
-            learning <br>
-            problem solving <br>
+            learning,<br>
+            problem-solving,<br>
             and risk <br>is embraced as part of the <strong>culture.</strong><br>
         </i>
         </div>
