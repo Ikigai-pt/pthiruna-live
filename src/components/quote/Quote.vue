@@ -27,7 +27,6 @@
       :erase-on-complete='true'
       caret-animation='blink'
       ></vue-typer>
-      -
     </p>
   </div>
 </template>
