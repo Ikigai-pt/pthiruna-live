@@ -4,7 +4,7 @@ import Code from '@/pages/code/Code';
 import About from '@/pages/about/About';
 import Contact from '@/pages/contact/Contact';
 import Books from '@/pages/books/Books';
-import Lifestyle from '@/pages/lifestyle/Lifestyle';
+import Trading from '@/pages/trading/Trading';
 import Productivity from '@/pages/productivity/Productivity';
 import Blog from '@/pages/blog/Blog';
 
@@ -33,9 +33,9 @@ export default new Router({
       meta: { icon: 'far fa-file-code' },
     },
     {
-      path: '/lifestyle',
-      name: 'Lifestyle',
-      component: Lifestyle,
+      path: '/trading',
+      name: 'Trading',
+      component: Trading,
       meta: { icon: 'fas fa-map-marker-alt' },
     },
     {
