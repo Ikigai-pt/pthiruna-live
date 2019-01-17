@@ -1,5 +1,5 @@
 <template>
-  <div class="container is-mobile shadow">
+  <div class="container shadow is-mobile">
     <chart-summary
       :symbol="symbol"
       :changeValue="changeValue"
@@ -7,7 +7,7 @@
       :currentValue="currentValue"
       :displayLineChart="displayLineChart"
       :toggleChart="handleToggleChart" />
-      <chart :data="tradingData" :displayLineChart="displayLineChart"/>
+      <chart :labels="labels" :tradingData="tradingData" :displayLineChart="displayLineChart"/>
       <settings
        :valueBeforeThreeMonths="valueBeforeThreeMonths"
        :valueBeforeOneMonth="valueBeforeOneMonth"
@@ -21,7 +21,7 @@
 
 <script>
 import axios from 'axios';
-import Chart from './Chart';
+import Chart from './FrappeChart';
 import ChartSummary from './Summary';
 import Settings from './Settings';
 
@@ -33,15 +33,16 @@ export default {
     Settings,
   },
   mounted() {
-    this.tradingValue('3m');
+    this.tradingValue('1d');
   },
   props: ['symbol'],
   data() {
     return {
       displayLineChart: true,
       dataRange: '1d',
-      tradingData: [],
       isLoading: false,
+      labels: [],
+      tradingData: [],
       yearLow: 100,
       yearHigh: 200,
       valueBeforeThreeMonths: 150,
@@ -66,10 +67,15 @@ export default {
       axios.get(url)
         .then(({ data }) => {
           const values = [];
+          const labels = [];
           data.forEach((lineItem) => {
             values.push(range === '1d' ? lineItem.average : lineItem.close);
+            labels.push(range === '1d' ? lineItem.minute : lineItem.date);
           });
-          this.tradingData = values;
+          this.tradingData = [{ values }];
+          this.labels = labels;
+          console.log(JSON.stringify(this.tradingData));
+          console.log(JSON.stringify(this.labels));
           this.isLoading = false;
         });
     },
@@ -78,7 +84,13 @@ export default {
 </script>
 
 <style scoped>
+<Paste>
 .shadow {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 90%;
+  margin-top: auto;
   border-width: 1px;
     border-style: solid;
     -webkit-border-image:

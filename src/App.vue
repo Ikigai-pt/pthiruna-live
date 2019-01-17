@@ -36,4 +36,17 @@ $breadcrumb-item-hover-color: $basePrimary;
 
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+// frappe settings
+//.frappe-chart .legend {
+//    display: none;
+//}
+///* x axis */
+//.frappe-chart .x.axis .line-vertical {
+//    display: none;
+//}
+//
+///* y axis */
+//.frappe-chart .y.axis .line-horizontal {
+//    display: none;
+//}
 </style>

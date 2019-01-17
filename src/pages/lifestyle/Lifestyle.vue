@@ -1,12 +1,13 @@
 <template>
-  <section class="container">
-    <div class="columns is-gapless is-multiline is-mobile">
-      <chart-panel class="column" symbol="aapl"> </chart-panel>
-      <chart-panel class="column" symbol="tsla"> </chart-panel>
-      <chart-panel class="column" symbol="amd"> </chart-panel>
-      <chart-panel class="column" symbol="nflx"> </chart-panel>
-    </div>
-  </section>
+  <section class="section is-mobile">
+    <div class="container">
+        <div class="columns is-multiline">
+          <div class="column" v-for="stock in watchList" :key="stock">
+            <chart-panel :symbol="stock"> </chart-panel>
+          </div>
+        </div>
+      </div>
+    </section>
 </template>
 
 <script>
@@ -16,6 +17,11 @@ export default {
   name: 'Trading',
   components: {
     ChartPanel,
+  },
+  data() {
+    return {
+      watchList: ['amd'],
+    };
   },
 };
 </script>
